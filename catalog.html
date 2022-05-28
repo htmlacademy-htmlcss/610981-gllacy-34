@@ -46,7 +46,84 @@
           </li>
       </ul>
     </header>
-    <main class="main-catalog"></main>
+    <main class="main-catalog">
+      <header class="catalog-header">
+        <h1 class="catalog-header-title">Сливочное мороженое</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-link-current">Каталог</a>
+          </li>
+        </ul>
+      </header>
+      <section class="catalog-products">
+        <h2 class=""></h2>
+        <div class="catalog-products-sorting">
+          <!-- Как лучше прописать заголовок для сортировки?  -->
+          <p>Сортировка:</p>
+          <!-- визуальная группировка элементов сортировки и фильтрации предполагает, что сортировка активируется кнопкой "применить"? Я такого не встречала, вынесла вне формы = активируется просто выбором <option>. ok? -->
+          <select class="sorting-select-control" aria-label="Сортировка">Сортировка
+            <option value="popular" selected>по популярности</option>
+            <option value="expensive">сначала дорогое</option>
+            <option value="cheap">сначала дешёвое</option>
+          </select>
+        </div>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+
+          <!-- Здесь будет элемент с двумя бегунками -->
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="control-input" type="radio" name="fat-content" id="fat-0" value="fat-0">
+                <label class="control" for="fat-0">0%</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="radio" name="fat-content" id="fat-less-10" value="fat-less-10" checked>
+                <label class="control" for="fat-less-10">до 10%</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="radio" name="fat-content" id="fat-less-30" value="fat-less-30">
+                <label class="control" for="fat-less-30">до 30%</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="radio" name="fat-content" id="fat-above-30" value="fat-above-30">
+                <label class="control" for="fat-above-30">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Наполнители:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="control-input" type="checkbox" name="chocolate" id="chocolate" checked>
+                <label class="control" for="chocolate">шоколадые</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="checkbox" name="sugar-powder" id="sugar-powder" checked>
+                <label class="control" for="sugar-powder">сахарные посыпки</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="checkbox" name="fruits" id="fruits">
+                <label class="control" for="fruits">фрукты</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="checkbox" name="syrop" id="syrop">
+                <label class="control" for="syrop">сиропы</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-input" type="checkbox" name="jams" id="jams">
+                <label class="control" for="jams">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Применить</button>
+        </form>
+      </section>
+    </main>
     <footer class="page-footer">
       <section class="footer-social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>

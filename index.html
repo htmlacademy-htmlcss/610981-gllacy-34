@@ -47,16 +47,16 @@
       </ul>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
+      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
         <!-- слайдер вызвал сильные затруднения. сложно понять что с чем сгруппировать (как размечаются |текст+ кнопка| с |картинкой+переключатели| c |превью других слайдеров|. Для состояний слайдер надо три разные страницы сделать или разметить на одной разными div'ами?) -->
           <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-          <!-- решила руководствоваться правило если кнопка важная, то подстраховывать ее ссылкой  -->
+          <!-- решила руководствоваться правилом "если кнопка важная, то подстраховывать ее ссылкой"  -->
           <a class="button slider-button">Заказать</a>
           <ul  class="slider-gallery">
             <li class="slider-item slider-item-current">
-              <img class="slider-image" src="" alt="Мороженное пломбир с клубничным джемом в рожке.">
+              <img class="slider-image" src="" alt="Мороженое пломбир с клубничным джемом в рожке.">
               <button class="slider-button" type="button">
                 <span class="visually-hidden">Предыдущий слайдер</span>
               </button>
@@ -66,10 +66,10 @@
             </li>
             <!-- Картинки в слайдере сделала списком, а потом подумала, что превьющки следующих слайдеров может вообще не стоит относить к контекстным элементам и разметить псевдоэлементами? -->
             <li class="slider-item">
-              <img class="slider-image" src="" alt="Мороженное сливочное со вкусом банана в рожке.">
+              <img class="slider-image" src="" alt="Мороженое сливочное со вкусом банана в рожке.">
             </li>
             <li class="slider-item">
-              <img class="slider-image" src="" alt="Мороженное пломбир карамельный
+              <img class="slider-image" src="" alt="Мороженое пломбир карамельный
               с маршмеллоу в рожке">
             </li>
           </ul>
@@ -124,6 +124,61 @@
           </li>
         </ul>
       </section>
+      <section class="favorite-products">
+        <h2 class="favorite-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="favorite-list">
+          <li class="product-card">
+            <h3 class="product-card-title">Малинка</h3>
+            <img class="product-card-image" src="" alt="Сливочное мороженое с малиновым джемом">
+            <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
+            <b class="product-card-price">310 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Фисташка</h3>
+            <img class="product-card-image" src="" alt="Фисташковый пломбир с кусочками шоколада">
+            <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
+            <b class="product-card-price">340 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Черника</h3>
+            <img class="product-card-image" src="" alt="Крем-брюле
+            с черничным джемом">
+            <p class="product-card-description">Крем-брюле
+              с черничным джемом</p>
+            <b class="product-card-price">330 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Бабл-гам</h3>
+            <img class="product-card-image" src="" alt="Ванильный пломбир
+            со сладкой посыпкой">
+            <p class="product-card-description">Ванильный пломбир
+              со сладкой посыпкой</p>
+            <b class="product-card-price">320 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="advantages-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+          <li class="advantages-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </section>
+
     </main>
     <footer class="page-footer">
       <section class="footer-social">

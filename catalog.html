@@ -48,7 +48,7 @@
     </header>
     <main class="main-catalog">
       <header class="catalog-header">
-        <h1 class="catalog-header-title">Сливочное мороженое</h1>
+        <h1 class="visually-hidden">Каталог</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -59,12 +59,12 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class=""></h2>
+        <h2 class="catalog-products-title">Сливочное мороженое</h2>
         <div class="catalog-products-sorting">
           <!-- Как лучше прописать заголовок для сортировки?  -->
-          <p>Сортировка:</p>
+          <p class="sorting-title">Сортировка:</p>
           <!-- визуальная группировка элементов сортировки и фильтрации предполагает, что сортировка активируется кнопкой "применить"? Я такого не встречала, вынесла вне формы = активируется просто выбором <option>. ok? -->
-          <select class="sorting-select-control" aria-label="Сортировка">Сортировка
+            <select class="sorting-select-control" aria-label="Сортировка">
             <option value="popular" selected>по популярности</option>
             <option value="expensive">сначала дорогое</option>
             <option value="cheap">сначала дешёвое</option>
@@ -122,6 +122,146 @@
           </fieldset>
           <button class="button" type="submit">Применить</button>
         </form>
+        <ul class="product-list">
+          <li class="product-card">
+            <h3 class="product-card-title">Малинка</h3>
+            <img class="product-card-image" src="" alt="Сливочное мороженое с малиновым джемом">
+            <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
+            <b class="product-card-price">310 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Фисташка</h3>
+            <img class="product-card-image" src="" alt="Фисташковый пломбир с кусочками шоколада">
+            <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
+            <b class="product-card-price">340 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Черника</h3>
+            <img class="product-card-image" src="" alt="Крем-брюле
+            с черничным джемом">
+            <p class="product-card-description">Крем-брюле с черничным джемом</p>
+            <b class="product-card-price">330 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Бабл-гам</h3>
+            <img class="product-card-image" src="" alt="Ванильный пломбир
+            со сладкой посыпкой">
+            <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
+            <b class="product-card-price">320 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Ежевика</h3>
+            <img class="product-card-image" src="" alt="Сливочное мороженое с ежевичным джемом">
+            <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
+            <b class="product-card-price">330 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Банан</h3>
+            <img class="product-card-image" src="" alt="Сливочный пломбир с банановым вкусом">
+            <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
+            <b class="product-card-price">340 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Шоколадка</h3>
+            <img class="product-card-image" src="" alt="Классический шоколадный пломбир">
+            <p class="product-card-description">Классический шоколадный пломбир</p>
+            <b class="product-card-price">270 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Клубничка</h3>
+            <img class="product-card-image" src="" alt="Сливочный пломбир с клубничным вкусом">
+            <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
+            <b class="product-card-price">300 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Лимон</h3>
+            <img class="product-card-image" src="" alt="Освежающий лимонный сорбет">
+            <p class="product-card-description">Освежающий лимонный сорбет</p>
+            <b class="product-card-price">310 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Ментол</h3>
+            <img class="product-card-image" src="" alt="Сливочный пломбир с ментоловым сиропом">
+            <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
+            <b class="product-card-price">320 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Орешек</h3>
+            <img class="product-card-image" src="" alt="Фисташковый пломбир с шоколадным сиропом">
+            <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
+            <b class="product-card-price">360 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <h3 class="product-card-title">Крем-брюле</h3>
+            <img class="product-card-image" src="" alt="Классическое крем-брюле">
+            <p class="product-card-description">Классическое крем-брюле</p>
+            <b class="product-card-price">280 ₽/кг</b>
+            <a class="product-card-button" href="#">
+              <span class="visually-hidden">В корзину</span>
+            </a>
+          </li>
+        </ul>
+        <a class="button pagination-show-more" href="#">Показать еще</a>
+        <ol class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev pagination-disabled">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+        </ol>
       </section>
     </main>
     <footer class="page-footer">

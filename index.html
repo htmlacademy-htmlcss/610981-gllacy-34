@@ -29,7 +29,6 @@
       </div>
       <ul class="navigation-user">
           <li class="navigation-user-item">
-              <!-- нажимаю на лупу и на текущей странице открывается попап поиска. Это все равно может быть ссылка, подгружающающая отдельную страницу страницу с поиском? -->
               <a class="navigation-user-link">
                   <span class="visually-hidden">Поиск</span>
               </a>
@@ -49,52 +48,87 @@
     <main class="main-index">
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
-        <!-- слайдер вызвал затруднения. сложно понять что с чем сгруппировать (как размечаются |текст+ кнопка| с |картинкой+переключатели| c |превью других слайдеров|. Для состояний слайдер надо три разные страницы сделать или разметить на одной разными div'ами?) -->
-          <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
-          <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-          <!-- решила руководствоваться правилом "если кнопка важная, то подстраховывать ее ссылкой"  -->
-          <a class="button slider-button">Заказать</a>
-          <ul  class="slider-gallery">
-            <li class="slider-item slider-item-current">
-              <img class="slider-image" src="" alt="Мороженое пломбир с клубничным джемом в рожке.">
-              <button class="slider-button" type="button">
-                <span class="visually-hidden">Предыдущий слайдер</span>
-              </button>
-              <button class="slider-button" type="button">
-                <span class="visually-hidden">Следующий слайдер</span>
-              </button>
-            </li>
-            <!-- Картинки в слайдере сделала списком, а потом подумала, что превьющки следующих слайдеров может вообще не стоит относить к контекстным элементам и разметить псевдоэлементами? -->
-            <li class="slider-item">
-              <img class="slider-image" src="" alt="Мороженое сливочное со вкусом банана в рожке.">
-            </li>
-            <li class="slider-item">
-              <img class="slider-image" src="" alt="Мороженое пломбир карамельный
-              с маршмеллоу в рожке">
-            </li>
-          </ul>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 слайдер</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 слайдер</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 слайдер</span>
-              </button>
-            </li>
-          </ol>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Телеграм</span>
-              </a>
+        <ul class="slider-list">
+          <li class="slider-item slider-item-current">
+            <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
+            <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+            <a class="button slider-button">Заказать</a>
+            <ul  class="slider-gallery">
+              <li class="slider-gallery-item slider-gallery-item-current">
+                <img class="slider-image" src="" alt="Мороженое пломбир с клубничным джемом в рожке.">
+              </li>
+              <li class="slider-gallery-item">
+                <img class="slider-image" src="" alt="Мороженое сливочное со вкусом банана в рожке.">
+              </li>
+              <li class="slider-gallery-item">
+                <img class="slider-image" src="" alt="Мороженое пломбир карамельный с маршмеллоу в рожке.">
+              </li>
+            </ul>
+          </li>
+          <li class="slider-item">
+            <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
+            <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+            <a class="button slider-button">Заказать</a>
+            <ul  class="slider-gallery">
+              <li class="slider-gallery-item slider-gallery-item-current">
+                <img class="slider-image" src="" alt="Мороженое сливочное со вкусом банана в рожке.">
+              </li>
+              <li class="slider-gallery-item">
+                <img class="slider-image" src="" alt="Мороженое пломбир карамельный с маршмеллоу в рожке.">
+              </li>
+              <li class="slider-gallery-item">
+                <img class="slider-image" src="" alt="Мороженое пломбир с клубничным джемом в рожке.">
+              </li>
+            </ul>
+          </li>
+          <li class="slider-item">
+            <h2 class="slider-title">НКарамельный пломбир с маршмеллоу</h2>
+            <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+            <a class="button slider-button">Заказать</a>
+            <ul  class="slider-gallery">
+              <li class="slider-gallery-item slider-gallery-item-current">
+                <img class="slider-image" src="" alt="Мороженое пломбир карамельный с маршмеллоу в рожке.">
+              </li>
+              <li class="slider-gallery-item">
+                <img class="slider-image" src="" alt="Мороженое пломбир с клубничным джемом в рожке.">
+              </li>
+              <li class="slider-gallery-item">
+                <img class="slider-image" src="" alt="Мороженое сливочное со вкусом банана в рожке.">
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="slider-buttons">
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Предыдущий слайдер</span>
+          </button>
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Следующий слайдер</span>
+          </button>
+        </div>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <!-- Почему ты говоришь, что здесь перемещение - это ссылки? Ведь слайдеры сделаны списком на одной странице? -->
+            <a class="slider-pagination-button slider-pagination-button-current" href="#">
+              <span class="visually-hidden">1 слайдер</span>
+            </a>
+          </li>
+          <li class="slider-pagination-item">
+            <a class="slider-pagination-button" href="#">
+              <span class="visually-hidden">2 слайдер</span>
+            </a>
+          </li>
+          <li class="slider-pagination-item">
+            <a class="slider-pagination-button" href="#">
+              <span class="visually-hidden">3 слайдер</span>
+            </a>
+          </li>
+        </ol>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
           <li class="social-item">
               <a class="social-link" href="https://vk.com/htmlacademy">
@@ -106,7 +140,7 @@
                   <span class="visually-hidden">Ютуб</span>
               </a>
           </li>
-          </ul>
+        </ul>
       </section>
       <section class="promo">
         <h2 class="promo-title">Заказывайте мороженое и получайте подарки!</h2>
@@ -114,7 +148,6 @@
           <li class="promo-item">
             <h3 class="promo-item-title">Малинка даром!</h3>
             <p class="promo-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <!-- предполагаю, что переносит на страницу с описанием акции. Хотя может и логичней чтобы в корзину просто добавлялся промокод, а это уже наверное просто <button> с JS и для подстраховки все равно нужна ссылка :))? Какая логика чаще в реальном проекте? -->
             <a class="button" href="#">Хочу подарок</a>
           </li>
           <li class="promo-item">
@@ -194,7 +227,6 @@
         </form>
       </section>
       <section class="delivery">
-        <!-- Судя по описанию в форме эта кнопка отправляет заказ, лежащий в корзине. Получается что форма с главной дублирует некую форму при оформлении заказа в корзине?  -->
         <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
         <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <div class="wrapper delivery-form-wrapper">

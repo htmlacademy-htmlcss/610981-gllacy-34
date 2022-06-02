@@ -59,18 +59,14 @@ body {
 
 /* Main */
 
-.main-index a,
-.main-catalog a {
-  color: #2d3440;
-  text-decoration: none;
-}
-
 .button {
   font-family: inherit;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  color: #2d3440;
   background-color: #fcfcfc;
+  text-decoration: none;
 }
 
 /* Slider */
@@ -150,6 +146,11 @@ body {
   line-height: 20px;
 }
 
+.article-link {
+  color: #2d3440;
+  text-decoration: none;
+}
+
 .article-title {
   font-size: 24px;
   line-height: 30px;
@@ -195,6 +196,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
 }
 
 .contacts-work-hours {
@@ -219,4 +222,35 @@ body {
 
 .copyright-link {
   color: #2d3440;
+}
+
+/* Inner Catalog */
+/* Breadcrumbs */
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.breadcrumbs-link-current {
+  /* подчеркивание border-bottom? */
+}
+
+.catalog-products-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
 }

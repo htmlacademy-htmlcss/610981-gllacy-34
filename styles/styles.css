@@ -123,10 +123,13 @@ body {
 
 /* Advantages */
 
+.advantages-wrapper{
+  background-image: url(../images/background-waffle.jpg);
+  background-size: 100% auto;
+}
+
 .advantages {
   background-color: #ffffff;
-  /* добавиться после разобра вопроса про фоновые кратинки */
-  /* background-image: url(); */
 }
 
 .advantages-title {
@@ -138,12 +141,15 @@ body {
 /* Blog-news */
 .blog-news {
   background-color: #ffffff;
-  /* добавиться после разобра вопроса про фоновые кратинки */
-  /* background-image: url(); */
+  background-image: url(../images/background-blog-news.jpg);
+  background-size: 100% auto;
 }
 
 .blog-news-title {
+  font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  color: #565c66;
 }
 
 .article-link {
@@ -158,17 +164,20 @@ body {
 }
 
 /* Subscription */
+.subscription-wrapper {
+  background-image: url(../images/background-subscribe.png);
+  background-size: 100% auto;
+}
+
 .subscription {
   background-color: #ffffff;
-  /* добавиться после разобра вопроса про фоновые кратинки */
-  /* background-image: url(); */
 }
 
 /* Delivery */
 .delivery {
   background-color: #ffffff;
-  /* добавиться после разобра вопроса про фоновые кратинки */
-  /* background-image: url(); */
+  background-image: url(../images/background-delivery.jpg);
+  background-size: 100% auto;
 }
 
 .delivery-title {
@@ -186,6 +195,16 @@ body {
 }
 
 /* Contacts */
+.contacts {
+  background-color: #ffffff;
+  background-image: url(../images/background-contacts.jpg);
+  background-size: 100% auto;
+}
+
+.contacts-wrapper {
+  background-color: #fcfcfc;
+}
+
 .contacts-address {
   font-size: 20px;
   line-height: 24px;

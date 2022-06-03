@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Inter-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Inter-700.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/Inter-900.woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  background-color: #feafc3;
+
+}
+
+/* Pages */
+
+/* Header */
+.page-header {
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.page-header a {
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.navigation-link {
+  text-align: center;
+}
+
+.header-contact-link {
+  font-weight: 700;
+  text-align: center;
+}
+
+.navigation-user-link {
+  font-size: 14px;
+}
+
+/* Main */
+
+.button {
+  font-family: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  text-decoration: none;
+}
+
+/* Slider */
+.slider-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.slider-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Promo */
+.promo-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.promo-item {
+  background-color: #ff7799;
+}
+
+.promo-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* Favorites */
+.favorite-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.product-card {
+  background-color: #fcfcfc;
+}
+
+.product-card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* Advantages */
+
+.advantages-wrapper {
+  background-image: url(../images/background-waffle.jpg);
+  background-size: 100% auto;
+}
+
+.advantages {
+  background-color: #ffffff;
+}
+
+.advantages-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+/* Blog-news */
+.blog-news {
+  background-color: #ffffff;
+  background-image: url(../images/background-blog-news.jpg);
+  background-size: 100% auto;
+}
+
+.blog-news-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #565c66;
+}
+
+.article-link {
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.article-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* Subscription */
+.subscription-wrapper {
+  background-image: url(../images/background-subscribe.png);
+  background-size: 100% auto;
+}
+
+.subscription {
+  background-color: #ffffff;
+}
+
+/* Delivery */
+.delivery {
+  background-color: #ffffff;
+  background-image: url(../images/background-delivery.jpg);
+  background-size: 100% auto;
+}
+
+.delivery-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.delivery-form-wrapper {
+  background-color: #fcfcfc;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+/* Contacts */
+.contacts {
+  background-color: #ffffff;
+  background-image: url(../images/background-contacts.jpg);
+  background-size: 100% auto;
+}
+
+.contacts-wrapper {
+  background-color: #fcfcfc;
+}
+
+.contacts-address {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-phone {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.contacts-work-hours {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Footer */
+.footer-about-us-link {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-about-us-link-marked {
+  font-weight: 700;
+}
+
+.copyright-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright-link {
+  color: #2d3440;
+}
+
+/* Inner Catalog */
+/* Breadcrumbs */
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.breadcrumbs-link-current {
+  /* подчеркивание border-bottom? */
+}
+
+.catalog-products-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}

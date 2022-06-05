@@ -234,7 +234,13 @@ body {
 }
 
 /* Blog-news */
+.index-columns {
+ display: flex;
+ justify-content: space-between;
+}
+
 .blog-news {
+  width: 570px;
   background-color: #ffffff;
   background-image: url(../images/background-blog-news.jpg);
   background-size: 100% auto;
@@ -260,11 +266,13 @@ body {
 
 /* Subscription */
 .subscription-wrapper {
+  width: 570px;
   background-image: url(../images/background-subscribe.png);
   background-size: 100% auto;
 }
 
 .subscription {
+  width: 558px;
   background-color: #ffffff;
 }
 

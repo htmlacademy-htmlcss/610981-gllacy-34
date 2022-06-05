@@ -215,6 +215,8 @@ body {
 }
 
 .advantages {
+  width: 1122px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -222,6 +224,13 @@ body {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Blog-news */

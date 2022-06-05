@@ -278,9 +278,14 @@ body {
 
 /* Delivery */
 .delivery {
+  display: flex;
   background-color: #ffffff;
   background-image: url(../images/background-delivery.jpg);
   background-size: 100% auto;
+}
+
+.delivery-inner {
+  width: 380px;
 }
 
 .delivery-title {
@@ -290,6 +295,7 @@ body {
 }
 
 .delivery-form-wrapper {
+  width: 500px;
   background-color: #fcfcfc;
 }
 

@@ -37,7 +37,7 @@ body {
   color: #2d3440;
   background-color: #feafc3;
 }
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -48,7 +48,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .button {
   font-family: inherit;
@@ -111,13 +111,28 @@ body {
 }
 
 /* Main */
-
-.main-container {
+.main-index {
   flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 /* Slider */
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider-item {
+  display: flex;
+}
+
+.slider-inner {
+  width: 470px;
+}
+
 .slider-title {
+  width: 1170px;
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
@@ -126,6 +141,11 @@ body {
 .slider-description {
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-gallery {
+  display: flex;
+  list-style: none;
 }
 
 /* Promo */

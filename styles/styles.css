@@ -22,16 +22,31 @@
   font-display: swap;
 }
 
+.html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #2d3440;
   background-color: #feafc3;
-
 }
 
-/* Pages */
+.button {
+  font-family: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  text-decoration: none;
+}
 
 /* Header */
 .page-header {
@@ -59,14 +74,8 @@ body {
 
 /* Main */
 
-.button {
-  font-family: inherit;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #2d3440;
-  background-color: #fcfcfc;
-  text-decoration: none;
+.main-container {
+  flex-grow: 1;
 }
 
 /* Slider */

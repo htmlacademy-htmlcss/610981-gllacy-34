@@ -148,6 +148,18 @@ body {
   list-style: none;
 }
 
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Promo */
 .promo-title {
   font-size: 32px;
@@ -311,6 +323,7 @@ body {
 }
 
 .contacts-wrapper {
+  width: 343px;
   background-color: #fcfcfc;
 }
 
@@ -334,6 +347,26 @@ body {
 }
 
 /* Footer */
+.page-footer {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-social{
+  width: 104px;
+}
+
+.footer-about-us {
+  width: 356px;
+}
+
+.footer-about-us-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .footer-about-us-link {
   font-size: 14px;
   line-height: 20px;
@@ -341,6 +374,10 @@ body {
 
 .footer-about-us-link-marked {
   font-weight: 700;
+}
+
+.footer-copyright {
+  width: 193px;
 }
 
 .copyright-description {

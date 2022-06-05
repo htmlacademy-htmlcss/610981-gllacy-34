@@ -153,6 +153,15 @@ body {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  text-align: center;
+}
+
+.promo-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .promo-item {

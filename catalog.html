@@ -45,7 +45,7 @@
           </li>
       </ul>
     </header>
-    <main class="main-catalog">
+    <main class="main-container main-catalog">
       <header class="catalog-header">
         <h1 class="visually-hidden">Каталог</h1>
         <ul class="breadcrumbs-list">
@@ -73,7 +73,7 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list catalog-filter-radio">
               <li class="catalog-filter-item">
                 <input class="control-input" type="radio" name="fat-content" id="fat-0" value="fat-0">
                 <label class="control" for="fat-0">0%</label>
@@ -94,7 +94,7 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list catalog-filter-checkbox">
               <li class="catalog-filter-item">
                 <input class="control-input" type="checkbox" name="chocolate" id="chocolate" checked>
                 <label class="control" for="chocolate">шоколадые</label>
@@ -117,7 +117,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="button catalog-filter-button" type="submit">Применить</button>
         </form>
         <ul class="product-list">
           <li class="product-card">
@@ -231,34 +231,36 @@
             </a>
           </li>
         </ul>
-        <a class="button pagination-show-more" href="#">Показать еще</a>
-        <ol class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ol>
+        <div class="pagination-wrapper">
+          <a class="button pagination-show-more" href="#">Показать еще</a>
+          <ol class="pagination-list catalog-pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ol>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

@@ -45,14 +45,16 @@
           </li>
       </ul>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
         <ul class="slider-list">
           <li class="slider-item slider-item-current">
-            <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
-            <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <a class="button slider-button" href="#">Заказать</a>
+            <div class="slider-inner">
+              <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
+              <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+              <a class="button slider-button" href="#">Заказать</a>
+          </div>
             <ul  class="slider-gallery">
               <li class="slider-gallery-item slider-gallery-item-current">
                 <img class="slider-image" src="./images/slider/big-cone-strawberry.png" width="306" height="507" alt="Мороженое пломбир с клубничным джемом в рожке.">
@@ -66,9 +68,11 @@
             </ul>
           </li>
           <li class="slider-item">
-            <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
-            <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-            <a class="button slider-button" href="#">Заказать</a>
+            <div class="slider-inner">
+              <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
+              <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+              <a class="button slider-button" href="#">Заказать</a>
+            </div>
             <ul  class="slider-gallery">
               <li class="slider-gallery-item slider-gallery-item-current">
                 <img class="slider-image" src="/images/slider/big-cone-banana.png" width="306" height="507" alt="Мороженое сливочное со вкусом банана в рожке.">
@@ -82,9 +86,11 @@
             </ul>
           </li>
           <li class="slider-item">
-            <h2 class="slider-title">Карамельный пломбир с маршмеллоу</h2>
-            <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <a class="button slider-button" href="#">Заказать</a>
+            <div class="slider-inner">
+              <h2 class="slider-title">Карамельный пломбир с маршмеллоу</h2>
+              <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+              <a class="button slider-button" href="#">Заказать</a>
+            </div>
             <ul  class="slider-gallery">
               <li class="slider-gallery-item slider-gallery-item-current">
                 <img class="slider-image" src="./images/slider/big-cone-caramel-and-marshmello.png" width="306" height="507" alt="Мороженое пломбир карамельный с маршмеллоу в рожке.">
@@ -106,7 +112,7 @@
             <span class="visually-hidden">Следующий слайдер</span>
           </button>
         </div>
-        <ol class="slider-pagination">
+        <ol class="pagination-list slider-pagination">
           <li class="slider-pagination-item">
             <a class="slider-pagination-button slider-pagination-button-current" href="#">
               <span class="visually-hidden">1 слайдер</span>
@@ -208,29 +214,33 @@
           </ul>
         </section>
       </div>
-      <section class="blog-news">
-        <h2 class="blog-news-title">Новое в нашем блоге</h2>
-        <article class="blog-article">
-          <a class="article-link" href="#">
-            <h1 class="article-title">10 способов сервировки фруктовых щербетов
-              к столу</h1>
-          </a>
-        </article>
-      </section>
-      <div class="subscription-wrapper">
-        <section class="subscription">
-          <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
-          <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="form-field" type="email" name="subscriber-email" placeholder="email@example.com">
-            <button class="button form-button" type="submit">Отправить</button>
-          </form>
+      <div class="index-columns">
+        <section class="blog-news">
+          <h2 class="blog-news-title">Новое в нашем блоге</h2>
+          <article class="blog-article">
+            <a class="article-link" href="#">
+              <h1 class="article-title">10 способов сервировки фруктовых щербетов
+                к столу</h1>
+            </a>
+          </article>
         </section>
+        <div class="subscription-wrapper">
+          <section class="subscription">
+            <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+            <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
+              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="form-field" type="email" name="subscriber-email" placeholder="email@example.com">
+              <button class="button form-button" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
       </div>
       <section class="delivery">
-        <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <div class="delivery-inner">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <div class="wrapper delivery-form-wrapper">
           <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">

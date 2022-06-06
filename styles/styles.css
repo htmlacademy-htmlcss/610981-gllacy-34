@@ -77,12 +77,13 @@ body {
 }
 
 .navigation {
-  width: 560px;
+  width: 680px;
   margin-right: auto;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   /* Временное решение */
@@ -93,8 +94,11 @@ body {
   text-align: center;
 }
 
-.header-contact-link {
+.header-contact {
   width: 150px;
+}
+
+.header-contact-link {
   font-weight: 700;
   text-align: center;
 }

@@ -49,6 +49,10 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 } */
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
 
 .button {
   font-family: inherit;
@@ -63,8 +67,6 @@ body {
 /* Header */
 .page-header {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
   line-height: 20px;
   color: #2d3440;
 }
@@ -113,8 +115,6 @@ body {
 /* Main */
 .main-container {
   flex-grow: 1;
-  width: 1170px;
-  margin: 0 auto;
 }
 
 /* Slider */
@@ -132,7 +132,6 @@ body {
 }
 
 .slider-title {
-  width: 1170px;
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
@@ -349,8 +348,6 @@ body {
 /* Footer */
 .page-footer {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .footer-social{

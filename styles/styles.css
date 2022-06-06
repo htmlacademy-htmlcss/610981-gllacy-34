@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Inter-400.woff2);
+  src: url(../fonts/inter-400.woff2);
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/Inter-700.woff2);
+  src: url(../fonts/inter-700.woff2);
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url(../fonts/Inter-900.woff2);
+  src: url(../fonts/inter-900.woff2);
   font-display: swap;
 }
 

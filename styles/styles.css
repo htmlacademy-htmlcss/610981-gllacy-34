@@ -37,7 +37,7 @@ body {
   color: #2d3440;
   background-color: #feafc3;
 }
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -48,7 +48,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 .page-container {
   width: 1170px;
   margin: 0 auto;
@@ -86,8 +86,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  /* Временное решение */
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -105,11 +104,11 @@ body {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   width: 270px;
   margin: 0;
   padding: 0;
-  /* Временное решение */
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-user-link {
@@ -125,7 +124,7 @@ body {
 .slider-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 .slider-item {
   display: flex;
@@ -148,19 +147,19 @@ body {
 
 .slider-gallery {
   display: flex;
-  list-style: none;
+  list-style-type: none;
 }
 
 .pagination-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .social-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 /* Promo */
@@ -176,7 +175,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .promo-item {
@@ -202,7 +201,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .product-card {
@@ -245,7 +244,7 @@ body {
 .advantages-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 /* Blog-news */
@@ -352,10 +351,11 @@ body {
 /* Footer */
 .page-footer {
   display: flex;
+  justify-content: space-between;
 }
 
-.footer-social{
-  width: 104px;
+.footer-social {
+  width: 203px;
 }
 
 .footer-about-us {
@@ -365,7 +365,7 @@ body {
 .footer-about-us-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .footer-about-us-link {
@@ -397,7 +397,7 @@ body {
   justify-content: start;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -433,7 +433,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .catalog-filter-radio {
@@ -454,7 +454,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .pagination-wrapper {

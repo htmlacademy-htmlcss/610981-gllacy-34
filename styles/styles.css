@@ -55,18 +55,21 @@ body {
 }
 
 .button {
+  padding: 12px 32px;
   font-family: inherit;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   color: #2d3440;
   background-color: #fcfcfc;
+  border-radius: 26px;
   text-decoration: none;
 }
 
 /* Header */
 .page-header {
   display: flex;
+  margin-bottom: 15px;
   padding-top: 24px;
   padding-bottom: 24px;
   line-height: 20px;
@@ -148,13 +151,19 @@ body {
 }
 
 /* Slider */
+.slider {
+  margin-bottom: 80px;
+}
+
 .slider-list {
   margin: 0;
+  margin-left: 70px;
   padding: 0;
   list-style-type: none;
 }
 .slider-item {
   display: flex;
+  align-items: center;
 }
 
 .slider-inner {
@@ -162,19 +171,43 @@ body {
 }
 
 .slider-title {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
 }
 
 .slider-description {
+  max-width: 415px;
+  margin: 0;
+  margin-bottom: 48px;
   font-size: 18px;
   line-height: 24px;
 }
 
+.slider-button {
+  display: inline-block;
+}
+
 .slider-gallery {
   display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.slider-gallery-item {
+  padding: 0 17px;
+}
+.slider-gallery-item:last-child {
+  margin-left: 41px;
+}
+
+.slider-gallery-item-current {
+  margin-right: 37px;
+  padding: 0 21px;
 }
 
 .pagination-list {
@@ -190,7 +223,16 @@ body {
 }
 
 /* Promo */
+.promo {
+  margin-bottom: 80px;
+}
+
 .promo-title {
+  max-width: 440px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 55px;
+  margin-right: auto;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -207,13 +249,26 @@ body {
 
 .promo-item {
   width: 570px;
+  padding-top: 36px;
+  padding-left: 36px;
+  padding-bottom: 36px;
+  box-sizing: border-box;
   background-color: #ff7799;
+  border-radius: 19px;
 }
 
 .promo-item-title {
+  margin-top: 0;
+  margin-bottom: 28px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.promo-item-description {
+  max-width: 330px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 /* Favorites */

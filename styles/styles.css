@@ -398,16 +398,25 @@ body {
 .index-columns {
  display: flex;
  justify-content: space-between;
+ margin-bottom: 80px;
 }
 
 .blog-news {
   width: 570px;
+  padding-top: 32px;
+  padding-right: 235px;
+  padding-bottom: 67px;
+  padding-left: 32px;
+  box-sizing: border-box;
   background-color: #ffffff;
   background-image: url(../images/background-blog-news.jpg);
   background-size: 100% auto;
+  border-radius: 16px;
 }
 
 .blog-news-title {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -420,6 +429,8 @@ body {
 }
 
 .article-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -428,13 +439,25 @@ body {
 /* Subscription */
 .subscription-wrapper {
   width: 570px;
+  padding: 6px;
+  box-sizing: border-box;
   background-image: url(../images/background-subscribe.png);
+  background-repeat: no-repeat;
   background-size: 100% auto;
+  border-radius: 16px;
 }
 
 .subscription {
   width: 558px;
+  padding: 26px;
+  box-sizing: border-box;
   background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.subscription-description {
+  margin: 0;
+  margin-bottom: 42px;
 }
 
 /* Delivery */

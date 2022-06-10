@@ -280,6 +280,10 @@ body {
 }
 
 /* Favorites */
+.favorite-products {
+  margin-bottom: 80px;
+}
+
 .favorite-title {
   max-width: 530px;
   margin-top: 0;
@@ -349,19 +353,26 @@ body {
 }
 
 /* Advantages */
-
 .advantages-wrapper {
+  margin-bottom: 80px;
+  padding: 24px;
+  box-sizing: border-box;
   background-image: url(../images/background-waffle.jpg);
   background-size: 100% auto;
+  border-radius: 16px;
 }
 
 .advantages {
   width: 1122px;
-  margin: 0 auto;
+  padding: 56px 40px;
+  box-sizing: border-box;
   background-color: #ffffff;
+  border-radius: 16px;
 }
 
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 56px;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -369,9 +380,18 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.advantages-item {
+  max-width: 445px;
+  padding-bottom: 40px;
 }
 
 /* Blog-news */

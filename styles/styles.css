@@ -527,17 +527,36 @@ body {
 
 /* Contacts */
 .contacts {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 64px;
   background-color: #ffffff;
   background-image: url(../images/background-contacts.jpg);
   background-size: 100% auto;
+  border-radius: 16px;
 }
 
 .contacts-wrapper {
   width: 343px;
+  padding: 40px;
+  box-sizing: border-box;
+  font-style: inherit;
   background-color: #fcfcfc;
+  border-radius: 8px;
+}
+
+.contacts-wrapper p {
+  color: #565c66;
+}
+
+.contacts-description {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .contacts-address {
+  display: block;
+  margin-bottom: 24px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -552,6 +571,8 @@ body {
 }
 
 .contacts-work-hours {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 20px;
 }

@@ -733,16 +733,21 @@ body {
 }
 
 .pagination-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   padding-top: 41px;
   padding-bottom: 41px;
-  padding-left: 488px;
+}
+
+.pagination-show-more {
+  grid-column: 2 / 3;
+  justify-self: center;
 }
 
 .catalog-pagination-list {
   display: flex;
+  justify-self: end;
+  align-self: center;
 }
 
 .pagination-link {

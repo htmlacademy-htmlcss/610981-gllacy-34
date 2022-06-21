@@ -27,10 +27,10 @@
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -82,15 +82,18 @@ body {
   text-decoration: none;
 }
 
-.page-header-logo {
-  display: block;
-}
-
 .navigation {
   display: flex;
-  justify-content: space-between;
-  width: 555px;
+  max-width: 690px;
   margin-right: auto;
+}
+
+.navigation-logo {
+  margin-right: 16px;
+}
+
+.navigation-logo-image {
+  display: block;
 }
 
 .navigation-list {
@@ -103,6 +106,7 @@ body {
 }
 
 .navigation-link {
+  display: inline-block;
   padding: 8px 16px;
   text-align: center;
 }
@@ -398,7 +402,10 @@ body {
 
 .advantages-item {
   max-width: 445px;
-  padding-bottom: 40px;
+}
+
+.advantages-item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 40px;
 }
 
 /* Blog-news */
@@ -612,6 +619,8 @@ body {
 .footer-about-us-link {
   font-size: 14px;
   line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
 }
 
 .footer-about-us-link-marked {
@@ -645,6 +654,7 @@ body {
 /* Breadcrumbs */
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   margin: 0;
   padding: 0;

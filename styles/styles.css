@@ -535,10 +535,32 @@ body {
   color: #565c66;
 }
 
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 16px 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .form-label {
   display: block;
   padding-bottom: 8px;
   font-weight: 700;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+  margin-bottom: 12px;
+}
+
+.delivery-form-button {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 /* Contacts */

@@ -60,13 +60,16 @@ body {
   display: inline-block;
   padding: 12px 32px;
   font-family: inherit;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   color: #2d3440;
   background-color: #fcfcfc;
+  border: none;
   border-radius: 26px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Header */

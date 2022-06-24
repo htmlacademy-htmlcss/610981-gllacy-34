@@ -300,8 +300,21 @@ body {
   padding-bottom: 36px;
   box-sizing: border-box;
   background-color: #ff7799;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 19px;
 }
+
+.promo-item-raspberry {
+  background-image: url("../images/promo-raspberry.png");
+}
+
+.promo-item-marshmello {
+  background-image: url("../images/promo-marshmello.png");
+}
+
+
 
 .promo-item-title {
   margin-top: 0;

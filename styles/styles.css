@@ -479,7 +479,7 @@ body {
   background-image: url("../images/advantages-cow.svg");
 }
 
-.advantages-item-thermometer{
+.advantages-item-thermometer {
   background-image: url("../images/advantages-thermometer.svg");
 }
 
@@ -700,13 +700,9 @@ body {
   width: 230px;
 }
 
-.footer-about-us {
-  width: 332px;
-}
-
 .footer-about-us-list {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: max-content max-content;
   gap: 8px 24px;
   margin: 0;
   padding: 0;
@@ -721,7 +717,21 @@ body {
 }
 
 .footer-about-us-link-marked {
+  position: relative;
   font-weight: 700;
+}
+
+.footer-about-us-link-marked::before {
+  content: ' ';
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  bottom: 0;
+  right: 0;
+  /* width: 100%;
+  height: 100%; */
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
 }
 
 .footer-copyright {

@@ -700,6 +700,15 @@ body {
   width: 230px;
 }
 
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-item + .social-item {
+  margin-left: 16px;
+}
+
 .footer-about-us-list {
   display: grid;
   grid-template-columns: max-content max-content;

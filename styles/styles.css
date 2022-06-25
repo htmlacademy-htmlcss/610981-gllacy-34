@@ -430,6 +430,7 @@ body {
   padding: 8px;
   box-sizing: border-box;
   background-color: #ff2f64;
+  border-radius: 50%;
 }
 
 .product-card-button-image {
@@ -938,4 +939,9 @@ body {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #fcfcfc;
+  border-radius: 50%;
 }

@@ -779,6 +779,27 @@ body {
   list-style-type: none;
 }
 
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -17px;
+  background-image: url("../images/arrow-double.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 28px;
+}
+
 .breadcrumbs-link {
   font-size: 14px;
   line-height: 20px;
@@ -788,11 +809,9 @@ body {
 }
 
 .breadcrumbs-link-current {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #000000;
   /* подчеркивание border-bottom? */
-}
-
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 28px;
 }
 
 .catalog-header {

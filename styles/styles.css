@@ -458,7 +458,7 @@ body {
   width: 270px;
   padding-top: 133px;
   padding-right: 40px;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   padding-left: 40px;
   box-sizing: border-box;
   background-color: #fcfcfc;
@@ -491,6 +491,7 @@ body {
 .product-card-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -504,14 +505,42 @@ body {
 .product-card-button {
   width: 32px;
   height: 32px;
-  padding: 8px;
+  padding: 6px;
   box-sizing: border-box;
   background-color: #ff2f64;
+  border: 2px solid #ff2f64;
   border-radius: 50%;
 }
 
 .product-card-button-image {
   fill: #fcfcfc;
+}
+
+.product-card-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #ff2f64;
+}
+
+.product-card-button:hover .product-card-button-image {
+  fill: #2d3440;
+}
+
+.product-card-button:focus {
+  outline: 2px solid #2d3440;
+  outline-offset: -2px;
+}
+
+.product-card-button:active {
+  background-color: #ffcbd8;
+  border: 2px solid #ff2f64;
+}
+
+.product-card-button:disabled {
+  background-color: #b9b9b9;
+}
+
+.product-card-button:disabled .product-card-button-image {
+  fill: #565c66;
 }
 
 /* Advantages */

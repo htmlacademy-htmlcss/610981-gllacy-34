@@ -150,16 +150,24 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
   border-radius: 20px;
-  box-shadow: none;
 }
 
-.button-light:hover {}
+.button-light:hover {
+  background-color: #fcfcfc;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+}
 
-.button-light:focus {}
+.button-light:focus {
+  border: 2px solid #2d3440;
+}
 
-.button-light:active {}
+.button-light:active {
+  border: none;
+}
 
-.button-light:disabled {}
+.button-light:disabled {
+  opacity: 0.4;
+}
 
 /* Header */
 .page-header {

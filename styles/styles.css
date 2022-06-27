@@ -1074,17 +1074,27 @@ body {
 }
 
 .pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
-  padding: 2px 7px;
   line-height: 20px;
   color: #2d3440;
+  background-clip: padding-box;
   border-radius: 50%;
+  box-sizing: border-box;
   text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #fcfcfc;
+  border: 1px solid #fcfcfc;
 }
 
 .pagination-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid rgba(252, 252, 252, 0.5);
 }
 
 .pagination-link:focus {
@@ -1095,9 +1105,4 @@ body {
 .pagination-link:active {
   background-color: rgba(252, 252, 252, 0.5);
   border: 1px solid #fcfcfc;
-}
-
-.pagination-current {
-  background-color: #fcfcfc;
-  border-radius: 50%;
 }

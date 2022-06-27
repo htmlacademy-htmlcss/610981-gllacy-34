@@ -84,12 +84,13 @@ body {
   box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
 }
 
-.button-basic:focus {
-  background-color: rgba(252, 252, 252, 0.5);
+
+.button-basic:active {
   outline: 2px solid #2d3440;
 }
 
-.button-basic:active {
+.button-basic:focus {
+  background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2d3440;
 }
 
@@ -122,13 +123,14 @@ body {
   /* предполагаю, что в макете забыли добавить тень для этого состояния, поэтому не отключаю ее */
 }
 
-.button-bright:focus {
-  outline: 2px solid #2D3440;
-}
 
 .button-bright:active {
   background-color: #feafc3;
   outline: 2px solid #2d3440;
+}
+
+.button-bright:focus {
+  outline: 2px solid #2D3440;
 }
 
 .button-bright-loading {
@@ -158,12 +160,12 @@ body {
   outline: 2px solid rgba(252, 252, 252, 0.3);
 }
 
-.button-light:focus {
-  outline: 2px solid #2d3440;
-}
-
 .button-light:active {
   outline: none;
+}
+
+.button-light:focus {
+  outline: 2px solid #2d3440;
 }
 
 .button-light:disabled {
@@ -221,14 +223,14 @@ body {
   border: 2px solid rgba(252, 252, 252, 0.5);
 }
 
-.navigation-link:focus {
-  background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2d3440;
-}
-
 .navigation-link:active {
   background-color: #fcfcfc;
   border: 2px solid #fcfcfc;
+}
+
+.navigation-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2d3440;
 }
 
 .navigation-link-current {
@@ -277,14 +279,14 @@ body {
   border: 2px solid rgba(252, 252, 252, 0.5);
 }
 
-.navigation-user-link:focus {
-  background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2d3440;
-}
-
 .navigation-user-link:active {
   background-color: #fcfcfc;
   border: 2px solid #fcfcfc;
+}
+
+.navigation-user-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2d3440;
 }
 
 .navigation-user-search {
@@ -578,13 +580,13 @@ body {
   fill: #2d3440;
 }
 
-.product-card-button:focus {
-  border: 2px solid #2d3440;
-}
-
 .product-card-button:active {
   background-color: #ffcbd8;
   border: 2px solid #ff2f64;
+}
+
+.product-card-button:focus {
+  border: 2px solid #2d3440;
 }
 
 .product-card-button:disabled {
@@ -915,14 +917,14 @@ body {
   background-color: #2d3440;
 }
 
-.social-link:focus {
-  background-color: #2d3440;
-  outline: 2px solid #2D3440;
-}
-
 .social-link:active {
   background-color: #2d3440;
   opacity: 0.5;
+}
+
+.social-link:focus {
+  background-color: #2d3440;
+  outline: 2px solid #2D3440;
 }
 
 .footer-about-us-list {
@@ -1147,14 +1149,14 @@ body {
   border: 1px solid rgba(252, 252, 252, 0.5);
 }
 
-.pagination-link:focus {
-  background-color: rgba(252, 252, 252, 0.3);
-  border: 1px solid #2d3440;
-}
-
 .pagination-link:active {
   background-color: rgba(252, 252, 252, 0.5);
   border: 1px solid #fcfcfc;
+}
+
+.pagination-link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2d3440;
 }
 
 .pagination-current {

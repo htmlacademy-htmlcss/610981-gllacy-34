@@ -1049,20 +1049,22 @@ body {
 }
 
 .pagination-arrow {
+  display: flex;
   width: 16px;
   height: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-image: url("../images/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .pagination-prev {
-  padding: 3px 6px 3px 4px;
-}
-
-.pagination-next {
-  padding: 3px 4px 3px 6px;
-}
-
-.pagination-prev svg {
   transform: rotate(180deg);
+}
+
+.pagination-disabled {
+  opacity: 0.3;
 }
 
 .catalog-pagination-list {

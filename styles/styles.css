@@ -490,6 +490,44 @@ body {
   list-style-type: none;
 }
 
+.slider-pagination {
+  display: flex;
+}
+
+.slider-pagination-item + .slider-pagination-item {
+   margin-left: 8px;
+}
+
+.slider-pagination-button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  background-color: rgba(252, 252, 252, 0.3);
+  background-clip: padding-box;
+  border: 1px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.slider-pagination-button:hover {
+  border: 1px solid #fcfcfc;
+}
+
+.slider-pagination-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid rgba(252, 252, 252, 0.5);
+}
+
+.slider-pagination-button:focus {
+  border: 1px solid #2d3440;
+}
+
+.slider-pagination-button-current {
+  background-color: #fcfcfc;
+  background-clip: border-box;
+  border: 1px solid #fcfcfc;
+}
+
 .social-list {
   margin: 0;
   padding: 0;

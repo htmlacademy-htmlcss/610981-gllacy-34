@@ -265,9 +265,12 @@ body {
 }
 
 .navigation-user-link {
+  display: inline-block;
   min-height: 32px;
   padding: 5px 12px;
+  box-sizing: border-box;
   font-size: 14px;
+  text-align: center;
   background-color: rgba(252, 252, 252, 0.3);
   background-clip: padding-box;
   border: 2px solid rgba(252, 252, 252, 0.3);
@@ -292,7 +295,7 @@ body {
 .navigation-user-search {
   position: relative;
   min-width: 32px;
-  padding: 8px;
+  padding: 6px;
   border-radius: 50%;
 }
 
@@ -1092,7 +1095,7 @@ body {
 /* Inner Catalog */
 
 .main-catalog {
-  padding-top: 32px;
+  padding-top: 29px;
 }
 
 /* Breadcrumbs */
@@ -1116,7 +1119,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: -17px;
+  left: -20px;
   background-image: url("../images/arrow-double.svg");
   background-position: left center;
   background-repeat: no-repeat;

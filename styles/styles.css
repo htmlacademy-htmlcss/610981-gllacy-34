@@ -67,7 +67,7 @@ body {
   color: #2d3440;
   background-clip: padding-box;
   border: none;
-  -webkit-border-radius: 26px;
+  transform: translateZ(0);
   border-radius: 26px;
   text-decoration: none;
   cursor: pointer;
@@ -499,6 +499,7 @@ body {
 
 .slider-pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .slider-pagination-item + .slider-pagination-item {
@@ -1065,6 +1066,20 @@ body {
   text-decoration: none;
 }
 
+.footer-about-us-link:hover {
+  color: rgb(45, 52, 64, 0.5);
+}
+
+.footer-about-us-link:active {
+  color: #000000;
+}
+
+.footer-about-us-link:focus {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2d3440;
+  outline: none;
+}
+
 .footer-about-us-link-marked {
   position: relative;
   font-weight: 700;
@@ -1097,6 +1112,20 @@ body {
 
 .copyright-link {
   color: #2d3440;
+}
+
+.copyright-link:hover {
+  color: rgb(45, 52, 64, 0.5);
+}
+
+.copyright-link:active {
+  color: #000000;
+}
+
+.copyright-link:focus {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2d3440;
+  outline: none;
 }
 
 /* Inner Catalog */

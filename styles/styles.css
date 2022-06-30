@@ -898,7 +898,7 @@ body {
 }
 
 .form-field {
-  padding: 14px 16px;
+  padding: 13px 15px;
   color: #2d3440;
   font: inherit;
   font-weight: 400;
@@ -918,6 +918,7 @@ body {
 }
 
 .form-field:focus {
+  padding: 12px 14px;
   border: 2px solid #2d3440;
 }
 
@@ -926,6 +927,7 @@ body {
 }
 
 .form-field-error:hover {
+  padding: 12px 14px;
   border: 2px solid #ea5454;
 }
 
@@ -1286,6 +1288,87 @@ body {
 
 .control-select {
   min-width: 196px;
+}
+
+.range-input-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 27px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  width: 164px;
+  height: 2px;
+  background-color: rgb(86, 92, 102, 0.3);
+  border-radius: 2px;
+
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #565c66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  background-color: #fcfcfc;
+  border: 6px solid #2d3440;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #2d3440;
+  border: 6px solid #fcfcfc;
+}
+
+.range-toggle:active {
+  background-color: #2d3440;
+}
+
+.range-toggle:focus {
+  background-color: #2d3440;
+  border: 6px solid #fcfcfc;
+  box-shadow: 0px 0px 0px 2px #2d3440;
+  outline: none;
+}
+
+.toggle-min {
+  top: -6px;
+  left: -6px;
+}
+
+.toggle-max {
+  top: -6px;
+  right: -6px;
 }
 
 .catalog-filter-list {

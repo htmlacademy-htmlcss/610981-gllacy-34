@@ -77,18 +77,36 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Сортировка:</legend>
-              <select class="control-select" aria-label="Сортировка">
+              <select class="control-container control-select" aria-label="Сортировка">
                 <option value="popular" selected>по популярности</option>
                 <option value="expensive">сначала дорогое</option>
                 <option value="cheap">сначала дешёвое</option>
               </select>
             </fieldset>
-
-            <!-- Здесь будет элемент с двумя бегунками -->
-
+            <fieldset class="catalog-filter-group">
+              <div class="catalog-filter-title range-title-wrapper">
+                <legend class="catalog-filter-title">Цена:</legend>
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="100" name="min-price"> ₽
+                </label>
+                <label class="catalog-filter-label"> –
+                  <input class="range-input" type="number" value="500" name="max-price"> ₽
+                </label>
+              </div>
+              <div class="control-container range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 40px; width: 56px;">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span></button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span></button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>
-              <ul class="catalog-filter-list catalog-filter-radio">
+              <ul class="control-container catalog-filter-list catalog-filter-radio">
                 <li class="catalog-filter-item">
                   <input class="control-input" type="radio" name="fat-content" id="fat-0" value="fat-0">
                   <label class="control" for="fat-0">0%</label>
@@ -110,7 +128,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители:</legend>
-              <ul class="catalog-filter-list catalog-filter-checkbox">
+              <ul class="control-container catalog-filter-list catalog-filter-checkbox">
                 <li class="catalog-filter-item">
                   <input class="control-input" type="checkbox" name="chocolate" id="chocolate" checked>
                   <label class="control" for="chocolate">шоколадые</label>

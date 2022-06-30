@@ -892,6 +892,60 @@ body {
   margin-bottom: 42px;
 }
 
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  padding: 14px 16px;
+  color: #2d3440;
+  font: inherit;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #b9b9b9;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-field::placeholder {
+  color: #b9b9b9;
+}
+
+.form-field:hover {
+  border: 1px solid #2d3440;
+}
+
+.form-field:focus {
+  border: 2px solid #2d3440;
+}
+
+.form-field-error {
+  border: 1px solid #ea5454;
+}
+
+.form-field-error:hover {
+  border: 2px solid #ea5454;
+}
+
+.form-field:disabled {
+  background-color: #e7e7e7;
+  border: 1px solid #b9b9b9;
+}
+
+.form-field:disabled::placeholder {
+  color: rgb(45, 52, 64, 0.65);
+}
+
+.form-field:disabled:hover::placeholder {
+  color: #2d3440;
+}
+
+.subscription-field {
+  width: 332px;
+}
+
 /* Delivery */
 .delivery {
   position: relative;
@@ -967,6 +1021,7 @@ body {
   display: block;
   padding-bottom: 8px;
   font-weight: 700;
+  line-height: 20px;
 }
 
 .delivery-form-address {

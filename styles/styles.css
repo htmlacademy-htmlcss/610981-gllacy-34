@@ -77,13 +77,13 @@ body {
   max-width: 200px;
   background-color: #fcfcfc;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-basic:hover {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 4px solid #fcfcfc;
-  box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 
@@ -101,7 +101,7 @@ body {
   background-image: url("../images/button-spinner-dark.svg");
   background-position: right 14px center;
   background-repeat: no-repeat;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-basic:disabled {
@@ -116,7 +116,7 @@ body {
   color: #fcfcfc;
   background-color: #ff2f64;
   outline: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-bright:hover {
@@ -141,7 +141,7 @@ body {
   background-image: url("../images/button-spinner-light.svg");
   background-position: right 14px center;
   background-repeat: no-repeat;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-bright:disabled {
@@ -1296,7 +1296,7 @@ body {
 }
 
 .catalog-filter-group:last-of-type {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .catalog-filter-title {
@@ -1392,7 +1392,7 @@ body {
 .range-toggle:focus {
   background-color: #2d3440;
   border: 6px solid #fcfcfc;
-  box-shadow: 0px 0px 0px 2px #2d3440;
+  box-shadow: 0 0 0 2px #2d3440;
   outline: none;
 }
 
@@ -1414,10 +1414,54 @@ body {
 
 /* Checkbox */
 .catalog-filter-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   min-width: 604px;
   padding: 9px 24px;
+  box-sizing: border-box;
 }
 
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-icon {
+  position: absolute;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2d3440;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.control:hover .control-icon {
+  border: 1px solid #fcfcfc;
+}
+
+.control:disabled .control-icon {
+  border: 1px solid rgb(252, 252, 252, 0.5);
+}
+
+.control-icon svg {
+  overflow: hidden;
+}
+
+.control .control-input[type="checkbox"]:checked .control-icon {
+  border: none;
+}
+
+.control .control-input[type="checkbox"]:checked .control-icon svg {
+  display: block;
+}
+
+.control-label {
+  padding-left: 25px;
+}
+
+/* Filter button  */
 .catalog-filter-button {
   min-width: 185px;
   margin-top: 28px;

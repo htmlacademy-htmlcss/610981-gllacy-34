@@ -1476,8 +1476,7 @@ body {
   box-sizing: border-box;
 }
 
-/* править селектор */
-.control-icon {
+.control-input[type="checkbox"] + .control-icon {
   border-radius: 2px;
 }
 
@@ -1485,12 +1484,20 @@ body {
   overflow: hidden;
 }
 
-.control .control-input[type="checkbox"]:checked .control-icon {
+.control-input[type="checkbox"]:checked + .control-icon {
   border: none;
 }
 
-.control .control-input[type="checkbox"]:checked .control-icon svg {
+.control-input[type="checkbox"]:checked + .control-icon svg {
   display: block;
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-icon svg {
+  fill: #fcfcfc;
+}
+
+.control-input[type="checkbox"]:checked:disabled + .control-icon svg {
+  fill: rgb(252, 252, 252, 0.5);
 }
 
 .control-label {

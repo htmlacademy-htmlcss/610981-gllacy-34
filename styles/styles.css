@@ -1282,7 +1282,7 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  row-gap: 16px;
   margin-bottom: 95px;
   font-size: 14px;
   line-height: 20px;
@@ -1301,12 +1301,16 @@ body {
 
 .catalog-filter-title {
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .control-container {
-  padding: 8px 16px;
+  padding: 4px 12px;
+  background-clip: padding-box;
   background-color: rgb(252, 252, 252, 0.3);
-  border-radius: 20px
+  border: 2px solid rgb(252, 252, 252, 0.3);
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .catalog-filter-list {
@@ -1319,11 +1323,29 @@ body {
 /* Select */
 .control-select {
   min-width: 196px;
+  padding-right: 63px;
+  color: #2d3440;
+  font: inherit;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  appearance: none;
+}
+
+.control-select:hover {
+  background-color: rgb(252, 252, 252, 0.5);
+  border: 2px solid rgb(252, 252, 252, 0.5);
+}
+
+.control-select:focus {
+  background-color: rgb(252, 252, 252, 0.4);
+  border: 2px solid #fcfcfc;
+  outline: none;
 }
 
 /* Range */
 .range {
-  padding: 16px 14px;
+  padding: 14px 12px;
 }
 
 .range-title-wrapper {
@@ -1412,7 +1434,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   min-width: 383px;
-  padding: 8px 24px;
+  padding: 4px 20px;
   box-sizing: border-box;
 }
 
@@ -1472,7 +1494,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   min-width: 604px;
-  padding: 9px 24px;
+  padding: 5px 20px;
   box-sizing: border-box;
 }
 

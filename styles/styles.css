@@ -423,7 +423,7 @@ body {
 }
 
 .slider-gallery-item-current::before {
-  content: ' ';
+  content: "";
   position: absolute;
   top: calc(50% - 312px/2);
   right: 0;
@@ -441,7 +441,7 @@ body {
 }
 
 .slider-gallery-item-preview::before {
-  content: ' ';
+  content: "";
   position: absolute;
   top: calc(50% - 100px/2);
   right: 0;
@@ -958,7 +958,7 @@ body {
 }
 
 .delivery::before {
-  content: ' ';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1170,7 +1170,7 @@ body {
 }
 
 .footer-about-us-link-marked::before {
-  content: ' ';
+  content: "";
   position: absolute;
   top: 2px;
   left: -23px;
@@ -1234,7 +1234,7 @@ body {
 }
 
 .breadcrumbs-item + .breadcrumbs-item::before {
-  content: ' ';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1408,17 +1408,11 @@ body {
 
 /* Radio */
 .catalog-filter-radio {
-  min-width: 383px;
-  padding: 8px 24px;
-}
-
-/* Checkbox */
-.catalog-filter-checkbox {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  min-width: 604px;
-  padding: 9px 24px;
+  min-width: 383px;
+  padding: 8px 24px;
   box-sizing: border-box;
 }
 
@@ -1433,7 +1427,6 @@ body {
   width: 16px;
   height: 16px;
   border: 1px solid #2d3440;
-  border-radius: 2px;
   box-sizing: border-box;
 }
 
@@ -1443,6 +1436,49 @@ body {
 
 .control:disabled .control-icon {
   border: 1px solid rgb(252, 252, 252, 0.5);
+}
+
+.control-icon[type="radio"] {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"] + .control-icon {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-icon::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #242424;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.control-input[type="radio"]:checked:hover + .control-icon::before {
+  background-color: #fcfcfc;
+}
+
+.control-input[type="radio"]:checked:disabled + .control-icon::before {
+  background-color: rgb(252, 252, 252, 0.5);
+}
+
+/* Checkbox */
+.catalog-filter-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-width: 604px;
+  padding: 9px 24px;
+  box-sizing: border-box;
+}
+
+/* править селектор */
+.control-icon {
+  border-radius: 2px;
 }
 
 .control-icon svg {

@@ -176,6 +176,30 @@ body {
   opacity: 0.4;
 }
 
+/* Popovers */
+
+.popover {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  display: none;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.popover-search {
+  width: 356px;
+  padding: 24px 16px;
+}
+
+.popover-search-form {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header */
 .page-header {
   display: flex;
@@ -269,6 +293,14 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.navigation-user-item {
+  position: relative;
+}
+
+.navigation-user-item:focus-within .popover {
+  display: block;
 }
 
 .navigation-user-item + .navigation-user-item {
@@ -899,6 +931,7 @@ body {
 
 .form-field {
   padding: 13px 15px;
+  box-sizing: border-box;
   color: #2d3440;
   font: inherit;
   font-weight: 400;
@@ -906,7 +939,6 @@ body {
   border: 1px solid #b9b9b9;
   background-color: #ffffff;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .form-field::placeholder {
@@ -1323,11 +1355,11 @@ body {
   height: 20px;
   padding-top: 22px;
   padding-right: 22px;
+  box-sizing: content-box;
   background-color: #fcfcfc;
   background-image: url("../images/cross.svg");
   background-position: center;
   background-repeat: no-repeat;
-  box-sizing: content-box;
   border: none;
   cursor: pointer;
 }
@@ -1454,11 +1486,11 @@ body {
 
 .control-container {
   padding: 4px 12px;
+  box-sizing: border-box;
   background-clip: padding-box;
   background-color: rgb(252, 252, 252, 0.3);
   border: 2px solid rgb(252, 252, 252, 0.3);
   border-radius: 20px;
-  box-sizing: border-box;
 }
 
 .catalog-filter-list {
@@ -1543,10 +1575,10 @@ body {
   width: 16px;
   height: 16px;
   padding: 2px;
+  box-sizing: border-box;
   background-color: #fcfcfc;
   border: 6px solid #2d3440;
   border-radius: 50%;
-  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -1596,8 +1628,8 @@ body {
   top: 2px;
   width: 16px;
   height: 16px;
-  border: 1px solid #2d3440;
   box-sizing: border-box;
+  border: 1px solid #2d3440;
 }
 
 .control:hover .control-icon {

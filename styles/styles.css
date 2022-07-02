@@ -185,6 +185,12 @@ body {
   z-index: 1;
   display: none;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #2d3440;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
@@ -198,6 +204,17 @@ body {
 .popover-search-form {
   display: flex;
   flex-direction: column;
+}
+
+.popover-cart-empty {
+  width: 288px;
+  padding: 48px 0;
+}
+
+.popover-cart-empty .popover-text {
+  margin: auto;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 /* Header */

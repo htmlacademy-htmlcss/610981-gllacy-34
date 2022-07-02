@@ -1021,9 +1021,12 @@ body {
 
 .form-label {
   display: block;
-  padding-bottom: 8px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.form-label-margin {
+  margin-bottom: 8px;
 }
 
 .delivery-form-address {
@@ -1035,6 +1038,81 @@ body {
   grid-column: 1 / -1;
   justify-self: center;
 }
+
+/* Tooltip */
+
+.tooltip {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.tooltip-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.tooltip-icon {
+  fill: #2d3440;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  fill: rgb(45, 52, 64, 0.5);
+}
+
+.tooltip-text {
+  position: absolute;
+  display: none;
+  left: 25px;
+  top: -10px;
+  z-index: 1;
+  width: 170px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  color: #565c66;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
+}
+
+.tooltip-toggle:hover::before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 0;
+  border-right: 7px solid #b9b9b9;
+}
+
+.tooltip-toggle:hover::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 0;
+  border-right: 7px solid #ffffff;
+}
+
+.tooltip-toggle:hover .tooltip-text {
+  display: block;
+}
+
 
 /* Contacts */
 .contacts {
@@ -1503,7 +1581,7 @@ body {
 }
 
 .control-icon svg {
-  overflow: hidden;
+  display: none;
 }
 
 .control-input[type="checkbox"]:checked + .control-icon {

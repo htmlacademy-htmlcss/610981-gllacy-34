@@ -382,7 +382,7 @@
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group delivery-form-date">
                 <span class="tooltip form-label-margin">
-                  <label class="form-label" for="user-address">Дата</label>
+                  <label class="form-label" for="delivery-date">Дата</label>
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg">
@@ -494,6 +494,25 @@
               academy</a> © 2021</p>
         </section>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button" type="menu">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="user-name">Имя и фамилия.</label>
+            <input class="form-field feedback-form-field" type="text" id="user-name" name="user-name" placeholder="Имя и фамилия">
+            <label class="visually-hidden" for="user-email">Электронный адрес.</label>
+            <input class="form-field feedback-form-field" type="text" id="user-email"  name="user-email" placeholder="email@example.com">
+            <label class="visually-hidden" for="user-message">Ваше сообщение.</label>
+            <textarea class="form-field feddback-form-field" id="user-message" rows="6" placeholder="В свободной форме"></textarea>
+            <button class="button button-bright feedback-form-submit" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 

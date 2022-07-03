@@ -203,6 +203,7 @@ body {
   line-height: 30px;
 }
 
+/* Popover search */
 .popover-search {
   width: 356px;
   padding: 24px 16px;
@@ -213,6 +214,53 @@ body {
   flex-direction: column;
 }
 
+/* Popover login */
+.popover-login {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 420px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.popover-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popover-login-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.popover-login-submit {
+  align-self: center;
+}
+
+.login-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.login-link {
+  color: #2d3440;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #2d3440;
+  text-decoration: none;
+}
+
+/* Popovers cart */
 .popover-cart {
   display: flex;
   flex-direction: column;

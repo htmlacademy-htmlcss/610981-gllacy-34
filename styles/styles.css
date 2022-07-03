@@ -196,6 +196,13 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
+.popover-title {
+  align-self: start;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .popover-search {
   width: 356px;
   padding: 24px 16px;
@@ -204,6 +211,86 @@ body {
 .popover-search-form {
   display: flex;
   flex-direction: column;
+}
+
+.popover-cart {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 441px;
+  padding: 48px;
+}
+
+.popover-cart-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  justify-content: start;
+  align-items: center;
+}
+
+.popover-cart-item + .popover-cart-item {
+  margin-top: 24px;
+}
+
+.popover-cart-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.popover-cart-product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  max-width: 226px;
+  margin: 0;
+  padding-left: 62px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 46px 46px;
+}
+
+.product-raspberry {
+  background-image: url("../images/catalog/raspberry.jpg");
+}
+
+.product-bubble-gum {
+  background-image: url("../images/catalog/bubble-gum.jpg");
+}
+
+/* .popover-cart-product::before {
+  width: 46px;
+  height: 46px;
+  background-image: url("../images/catalog/raspberry.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+} */
+
+
+.popover-product-price {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b9b9b9;
+}
+
+.button-delete {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url("../images/cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.popover-cart-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .popover-cart-empty {

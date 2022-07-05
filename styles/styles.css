@@ -458,6 +458,14 @@ body {
   margin-right: 16px;
 }
 
+.navigation-logo:hover .navigation-logo-image {
+  opacity: 0.5;
+}
+
+.navigation-logo:focus {
+  outline: 2px solid #2d3440;
+}
+
 .navigation-logo-image {
   display: block;
 }
@@ -1222,10 +1230,12 @@ body {
   outline: none;
 }
 
+.form-field:invalid,
 .form-field-error {
   border: 1px solid #ea5454;
 }
 
+.form-field-error:hover:invalid,
 .form-field-error:hover {
   padding: 12px 14px;
   border: 2px solid #ea5454;
@@ -1748,15 +1758,15 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 16px;
-  margin-bottom: 95px;
+  row-gap: 17px;
+  margin-bottom: 99px;
   font-size: 14px;
   line-height: 20px;
 }
 
 .catalog-filter-group {
   margin: 0;
-  margin-right: 24px;
+  margin-right: 25px;
   padding: 0;
   border: none;
 }
@@ -1766,7 +1776,7 @@ body {
 }
 
 .catalog-filter-title {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   padding-left: 16px;
 }
 
@@ -1789,7 +1799,7 @@ body {
 /* Select */
 .control-select {
   min-width: 196px;
-  padding-right: 63px;
+  padding-right: 60px;
   color: #2d3440;
   font: inherit;
   background-image: url("../images/arrow-down.svg");
@@ -2021,6 +2031,7 @@ body {
   grid-column: 2 / 3;
   justify-self: center;
   align-self: center;
+  margin-right: 15px;
 }
 
 .pagination-container {

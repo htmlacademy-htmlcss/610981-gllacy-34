@@ -1910,7 +1910,6 @@ body {
 
 .range-title-wrapper {
   display: flex;
-  justify-content: center;
 }
 
 .catalog-filter-label {
@@ -1920,7 +1919,7 @@ body {
 
 .range-input {
   width: 30px;
-  padding: 0 2px;
+  padding: 0;
   font: inherit;
   color: inherit;
   text-align: center;

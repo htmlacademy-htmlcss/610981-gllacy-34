@@ -39,7 +39,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1366px;
+  min-width: 1210px;
   min-height: 100%;
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -96,7 +96,6 @@ body {
   box-shadow: 0 0 0 4px #fcfcfc,
               0 4px 15px rgba(133, 133, 133, 0.15);
 }
-
 
 .button-basic:active {
   box-shadow: 0 0 0 2px #2d3440;
@@ -170,7 +169,6 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   box-shadow: 0 0 0 4px #ff2f64;
 }
-
 
 .button-bright:active {
   background-color: #feafc3;
@@ -961,9 +959,9 @@ body {
   padding-bottom: 36px;
   box-sizing: border-box;
   background-color: #ff7799;
-  background-position: right center;
+  background-position: right top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   border-radius: 19px;
 }
 
@@ -1037,7 +1035,8 @@ body {
   border-radius: 8px;
 }
 
-.product-card-interactive:hover::before {
+.product-card-interactive:hover::before,
+.product-card-interactive:focus::before {
   box-shadow: inset 0 0 10px 0 #feafc3;
 }
 
@@ -1130,6 +1129,7 @@ body {
   margin-bottom: 80px;
   padding: 24px;
   box-sizing: border-box;
+  background-color: #efe6d3;
   background-image: url("../images/background-waffle.jpg");
   background-size: contain;
   border-radius: 16px;
@@ -1505,13 +1505,12 @@ body {
   display: block;
 }
 
-
 /* Contacts */
 .contacts {
   padding-top: 64px;
   padding-bottom: 64px;
   padding-left: 64px;
-  background-color: #ffffff;
+  background-color: #e8c5c9;
   background-image: url("../images/background-contacts.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1755,11 +1754,14 @@ body {
   font-weight: 700;
 }
 
-
 .modal-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.feedback-form-field {
+  resize: none;
 }
 
 .feedback-form-submit {
@@ -1786,7 +1788,6 @@ body {
   padding: 0;
   list-style-type: none;
 }
-
 
 .breadcrumbs-item {
   position: relative;
@@ -2018,6 +2019,10 @@ body {
   border: 1px solid #fcfcfc;
 }
 
+.control-input:focus + .control-icon {
+  border: 1px solid #fcfcfc;
+}
+
 .control:disabled .control-icon {
   border: 1px solid rgb(252, 252, 252, 0.5);
 }
@@ -2042,7 +2047,8 @@ body {
   box-sizing: border-box;
 }
 
-.control-input[type="radio"]:checked:hover + .control-icon::before {
+.control-input[type="radio"]:checked:hover + .control-icon::before,
+.control-input[type="radio"]:checked:focus + .control-icon::before {
   background-color: #fcfcfc;
 }
 
@@ -2076,7 +2082,8 @@ body {
   display: block;
 }
 
-.control-input[type="checkbox"]:checked:hover + .control-icon svg {
+.control-input[type="checkbox"]:checked:hover + .control-icon svg,
+.control-input[type="checkbox"]:checked:focus + .control-icon svg{
   fill: #fcfcfc;
 }
 
@@ -2174,7 +2181,6 @@ body {
   text-decoration: none;
   aspect-ratio: 1 / 1;
 }
-
 
 .pagination-link[href]:hover {
   background-color: rgba(252, 252, 252, 0.5);
